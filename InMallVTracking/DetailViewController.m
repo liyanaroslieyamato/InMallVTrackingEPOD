@@ -13,6 +13,7 @@
 #import "StatusUpdateResponse.h"
 #import "ExchangeViewController.h"
 #import "DeliveryScanViewController.h"
+#import "SignPicViewController.h"
 
 @interface DetailViewController ()
 
@@ -109,11 +110,18 @@
 {
     UIBarButtonItem *backButton = [[UIBarButtonItem alloc] initWithTitle:@"Back" style: UIBarButtonItemStyleBordered target:self action:@selector(Back)];
     self.navigationItem.leftBarButtonItem = backButton;
+    
+    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithTitle:@"Add Pic Detail" style:UIBarButtonItemStyleBordered target:self action:@selector(AddPicDetail:)];
+    self.navigationItem.rightBarButtonItem = addButton;
 }
 
 - (IBAction)Back
 {
     [self dismissViewControllerAnimated:YES completion:nil]; // ios 6
+}
+
+- (IBAction)AddPicDetail:(id)sender {
+    [self performSegueWithIdentifier:@"signPicSegue" sender:sender];
 }
 
 
@@ -126,6 +134,14 @@
         
         //destViewController.doNumber = self.doNumTextField.text;
         destViewController.order = self.order;
+    }
+    else if ([[segue identifier] isEqualToString:@"signPicSegue"])
+    {
+        // Get reference to the destination view controller
+        UINavigationController *navController = (UINavigationController*)[segue destinationViewController];
+        SignPicViewController *signPicViewController = [[navController viewControllers]objectAtIndex:0];
+        signPicViewController.detailDataDict = @{@"entity_id":self.web_id, @"entity_type":@"border"};
+        
     }
 //    else if ([segue.identifier isEqualToString:@"backToScanPage"]) {
 //        

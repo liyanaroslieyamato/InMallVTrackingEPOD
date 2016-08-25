@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UploadImageResponse.h"
 
 #import <RestKit/RestKit.h>
 #import <RestKit/CoreData.h>
@@ -40,12 +41,26 @@
 - (void)configureRestKit
 {
     // initialize AFNetworking HTTPClient
-    baseURL = [NSURL URLWithString:@"http://yamatotracking.com"];
+    baseURL = [NSURL URLWithString:@"http://staging.yamatotracking.com"];
     AFHTTPClient *client = [[AFHTTPClient alloc] initWithBaseURL:baseURL];
     
     // initialize RestKit
     RKObjectManager *objectManager = [[RKObjectManager alloc] initWithHTTPClient:client];
     [objectManager.HTTPClient setAuthorizationHeaderWithToken:@"t5ygg5RxbuPYhCtC6LNj28ciWUDcNt7G0hVfouIfXAzq46FUYXEtmnzyGU6xTgowQaFyhxVqUOQRm808htL8AvWNbhNIlRfkI8ePhwNbp4qq9FMhICsmvTWYdzmL3mkC"];
+    
+    // Enable Activity Indicator Spinner
+    [AFNetworkActivityIndicatorManager sharedManager].enabled = YES;
+    
+    RKObjectMapping *UserMapping = [RKObjectMapping mappingForClass:[UploadImageResponse class]];
+    [UserMapping addAttributeMappingsFromDictionary:@{@"message" : @"message", @"image_url" : @"image_url"}];
+    NSIndexSet *successStatusCodes = RKStatusCodeIndexSetForClass(RKStatusCodeClassSuccessful);
+    
+    RKResponseDescriptor
+    *responseDescriptor = [RKResponseDescriptor responseDescriptorWithMapping:UserMapping
+                                                                  pathPattern:@"/hpapi/upload_image.json"
+                                                                      keyPath:nil
+                                                                  statusCodes:successStatusCodes];
+    [[RKObjectManager sharedManager] addResponseDescriptor:responseDescriptor];
     
 }
 

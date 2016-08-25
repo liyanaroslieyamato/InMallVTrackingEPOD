@@ -26,6 +26,13 @@
 		DF7B27211CEEA50B00ACD5DA /* StatusUpdateResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7B27201CEEA50B00ACD5DA /* StatusUpdateResponse.m */; };
 		DF7B27241CEEE31600ACD5DA /* Order.m in Sources */ = {isa = PBXBuildFile; fileRef = DF7B27231CEEE31600ACD5DA /* Order.m */; };
 		DF7B27271CEEE7B900ACD5DA /* InMallVTracking.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = DF7B27251CEEE7B900ACD5DA /* InMallVTracking.xcdatamodeld */; };
+		DFCC2BE01D6E8CF10078CF0C /* SignPicViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2BDF1D6E8CF10078CF0C /* SignPicViewController.m */; };
+		DFCC2BE41D6E936B0078CF0C /* UviSignatureView.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2BE31D6E936B0078CF0C /* UviSignatureView.m */; };
+		DFCC2BE71D6E9B080078CF0C /* SignViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2BE61D6E9B080078CF0C /* SignViewController.m */; };
+		DFCC2BEB1D6E9E420078CF0C /* ImageCollectionViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2BEA1D6E9E420078CF0C /* ImageCollectionViewCell.m */; };
+		DFCC2BEE1D6EAC6F0078CF0C /* Image.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2BED1D6EAC6F0078CF0C /* Image.m */; };
+		DFCC2BF11D6EAFE20078CF0C /* GGFullscreenImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2BF01D6EAFE20078CF0C /* GGFullscreenImageViewController.m */; };
+		DFCC2BF41D6EE29D0078CF0C /* UploadImageResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = DFCC2BF31D6EE29D0078CF0C /* UploadImageResponse.m */; };
 		DFF4EB6C1CF438F90014EB0F /* LSP.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF4EB6B1CF438F90014EB0F /* LSP.m */; };
 		DFF4EB6F1CF4392F0014EB0F /* Tenant.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF4EB6E1CF4392F0014EB0F /* Tenant.m */; };
 		DFF4EB721CF454AD0014EB0F /* ScanExistingPickupViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = DFF4EB711CF454AD0014EB0F /* ScanExistingPickupViewController.m */; };
@@ -72,6 +79,20 @@
 		DF7B27221CEEE31600ACD5DA /* Order.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Order.h; sourceTree = "<group>"; };
 		DF7B27231CEEE31600ACD5DA /* Order.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Order.m; sourceTree = "<group>"; };
 		DF7B27261CEEE7B900ACD5DA /* InMallVTracking.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = InMallVTracking.xcdatamodel; sourceTree = "<group>"; };
+		DFCC2BDE1D6E8CF10078CF0C /* SignPicViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignPicViewController.h; sourceTree = "<group>"; };
+		DFCC2BDF1D6E8CF10078CF0C /* SignPicViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignPicViewController.m; sourceTree = "<group>"; };
+		DFCC2BE21D6E936B0078CF0C /* UviSignatureView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UviSignatureView.h; sourceTree = "<group>"; };
+		DFCC2BE31D6E936B0078CF0C /* UviSignatureView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UviSignatureView.m; sourceTree = "<group>"; };
+		DFCC2BE51D6E9B080078CF0C /* SignViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SignViewController.h; sourceTree = "<group>"; };
+		DFCC2BE61D6E9B080078CF0C /* SignViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SignViewController.m; sourceTree = "<group>"; };
+		DFCC2BE91D6E9E420078CF0C /* ImageCollectionViewCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageCollectionViewCell.h; sourceTree = "<group>"; };
+		DFCC2BEA1D6E9E420078CF0C /* ImageCollectionViewCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageCollectionViewCell.m; sourceTree = "<group>"; };
+		DFCC2BEC1D6EAC6F0078CF0C /* Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Image.h; sourceTree = "<group>"; };
+		DFCC2BED1D6EAC6F0078CF0C /* Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Image.m; sourceTree = "<group>"; };
+		DFCC2BEF1D6EAFE20078CF0C /* GGFullscreenImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GGFullscreenImageViewController.h; sourceTree = "<group>"; };
+		DFCC2BF01D6EAFE20078CF0C /* GGFullscreenImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GGFullscreenImageViewController.m; sourceTree = "<group>"; };
+		DFCC2BF21D6EE29D0078CF0C /* UploadImageResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UploadImageResponse.h; sourceTree = "<group>"; };
+		DFCC2BF31D6EE29D0078CF0C /* UploadImageResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UploadImageResponse.m; sourceTree = "<group>"; };
 		DFF4EB6A1CF438F90014EB0F /* LSP.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSP.h; sourceTree = "<group>"; };
 		DFF4EB6B1CF438F90014EB0F /* LSP.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSP.m; sourceTree = "<group>"; };
 		DFF4EB6D1CF4392F0014EB0F /* Tenant.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tenant.h; sourceTree = "<group>"; };
@@ -187,6 +208,12 @@
 				DFF4EB711CF454AD0014EB0F /* ScanExistingPickupViewController.m */,
 				DF4BB0661CF56AAF000F45C2 /* ExchangeViewController.h */,
 				DF4BB0671CF56AAF000F45C2 /* ExchangeViewController.m */,
+				DFCC2BDE1D6E8CF10078CF0C /* SignPicViewController.h */,
+				DFCC2BDF1D6E8CF10078CF0C /* SignPicViewController.m */,
+				DFCC2BE51D6E9B080078CF0C /* SignViewController.h */,
+				DFCC2BE61D6E9B080078CF0C /* SignViewController.m */,
+				DFCC2BEF1D6EAFE20078CF0C /* GGFullscreenImageViewController.h */,
+				DFCC2BF01D6EAFE20078CF0C /* GGFullscreenImageViewController.m */,
 			);
 			name = Controllers;
 			sourceTree = "<group>";
@@ -217,9 +244,29 @@
 			name = Help;
 			sourceTree = "<group>";
 		};
+		DFCC2BE11D6E93230078CF0C /* SignatureView */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC2BE21D6E936B0078CF0C /* UviSignatureView.h */,
+				DFCC2BE31D6E936B0078CF0C /* UviSignatureView.m */,
+			);
+			name = SignatureView;
+			sourceTree = "<group>";
+		};
+		DFCC2BE81D6E9DDF0078CF0C /* ImageCollectionCell */ = {
+			isa = PBXGroup;
+			children = (
+				DFCC2BE91D6E9E420078CF0C /* ImageCollectionViewCell.h */,
+				DFCC2BEA1D6E9E420078CF0C /* ImageCollectionViewCell.m */,
+			);
+			name = ImageCollectionCell;
+			sourceTree = "<group>";
+		};
 		DFF9F9831CEB17EB00A4FFD1 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				DFCC2BE81D6E9DDF0078CF0C /* ImageCollectionCell */,
+				DFCC2BE11D6E93230078CF0C /* SignatureView */,
 				DFF9F9841CEB181D00A4FFD1 /* User.h */,
 				DFF9F9851CEB181D00A4FFD1 /* User.m */,
 				DF7B271F1CEEA50B00ACD5DA /* StatusUpdateResponse.h */,
@@ -232,6 +279,10 @@
 				DFF4EB6E1CF4392F0014EB0F /* Tenant.m */,
 				DFFB56A71CF68E96004C15A6 /* OrderBaseOnTenantCode.h */,
 				DFFB56A81CF68E96004C15A6 /* OrderBaseOnTenantCode.m */,
+				DFCC2BEC1D6EAC6F0078CF0C /* Image.h */,
+				DFCC2BED1D6EAC6F0078CF0C /* Image.m */,
+				DFCC2BF21D6EE29D0078CF0C /* UploadImageResponse.h */,
+				DFCC2BF31D6EE29D0078CF0C /* UploadImageResponse.m */,
 			);
 			name = Models;
 			sourceTree = "<group>";
@@ -359,8 +410,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				DFF6AF1B1CE95DF50061EFA8 /* NewExistingPickUpViewController.m in Sources */,
+				DFCC2BE71D6E9B080078CF0C /* SignViewController.m in Sources */,
 				DF69AAFA1CE5750400C31BCA /* LoginViewController.m in Sources */,
 				DF3248061CE5A0CB000284F8 /* DeliveryTableViewController.m in Sources */,
+				DFCC2BE01D6E8CF10078CF0C /* SignPicViewController.m in Sources */,
 				DF69AAF71CE5750400C31BCA /* AppDelegate.m in Sources */,
 				DFF4EB721CF454AD0014EB0F /* ScanExistingPickupViewController.m in Sources */,
 				DF69AAF41CE5750400C31BCA /* main.m in Sources */,
@@ -371,7 +424,9 @@
 				DF4BB0681CF56AAF000F45C2 /* ExchangeViewController.m in Sources */,
 				DFFB56A91CF68E96004C15A6 /* OrderBaseOnTenantCode.m in Sources */,
 				DFF9F9861CEB181D00A4FFD1 /* User.m in Sources */,
+				DFCC2BEE1D6EAC6F0078CF0C /* Image.m in Sources */,
 				DF78DE8A1CE692C400C092FE /* BarcodeScanViewController.m in Sources */,
+				DFCC2BE41D6E936B0078CF0C /* UviSignatureView.m in Sources */,
 				DFF4EB6F1CF4392F0014EB0F /* Tenant.m in Sources */,
 				DF32480C1CE5CCE5000284F8 /* NewPickUpViewController.m in Sources */,
 				DF7B27211CEEA50B00ACD5DA /* StatusUpdateResponse.m in Sources */,
@@ -379,6 +434,9 @@
 				DF3248031CE59D93000284F8 /* DeliveryScanViewController.m in Sources */,
 				DFF4EB6C1CF438F90014EB0F /* LSP.m in Sources */,
 				DF7B27241CEEE31600ACD5DA /* Order.m in Sources */,
+				DFCC2BF11D6EAFE20078CF0C /* GGFullscreenImageViewController.m in Sources */,
+				DFCC2BF41D6EE29D0078CF0C /* UploadImageResponse.m in Sources */,
+				DFCC2BEB1D6E9E420078CF0C /* ImageCollectionViewCell.m in Sources */,
 				DF3248091CE5A21E000284F8 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
